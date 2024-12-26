@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    // Step 2: Initialize the array
+    int arr[] = {2,3,5,7,11,13}; // Example array
+    int n = sizeof(arr) / sizeof(arr[0]); // Step 3: Calculate number of elements
+    int sum = 0; // Step 4: Initialize sum
+
+    // Step 5: Loop through the array and calculate the sum
+    for(int i = 0; i < n; i++) {
+        sum += arr[i];
+    }
+
+    // Step 6: Display the result
+    printf("Sum of array elements: %d\n", sum);
+
+    return 0;
+}
+
